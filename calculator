@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    char op;
+    printf("Enter a number: ");
+    scanf("%d", &a);
+    printf("Enter another number: ");
+    scanf("%d", &b);
+    printf("Enter an operator: 1. add  2. sub  3. mul  4. div\n");
+    scanf(" %c", &op);
+    switch (op) {
+        case 'a':
+            printf("Add: %d\n", a + b);
+            break;
+        case 's':
+            printf("Sub: %d\n", a - b);
+            break;
+        case 'm':
+            printf("Mul: %d\n", a * b);
+            break;
+        case 'd':
+            printf("Div: %d\n", a / b);
+            break;
+        default:
+            printf("Invalid operator\n");
+            break;
+    }
+    
+    return 0;
+}
